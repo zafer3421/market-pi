@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Market Pi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<style>
+body{font-family:sans-serif;text-align:center;background:#f5f0ff;padding:20px}
+.card{background:white;padding:20px;border-radius:15px;margin:15px 0}
+button{background:#7b2ff7;color:white;border:none;padding:12px;border-radius:10px;font-size:16px;width:100%}
+</style>
+</head>
+<body>
+<h1>Market Pi</h1>
+<p>Pi ile odeme yap</p>
+<div id="user">Giris yapilmadi</div><br>
+<button onclick="login()">Pi ile Giris Yap</button>
+<div class="card"><h3>Turk Kahvesi</h3><p>1.5 Pi</p><button onclick="pay(1.5,'Turk Kahvesi')">Pi ile Satin Al</button></div>
+<div class="card"><h3>Bal 500g</h3><p>3 Pi</p><button onclick="pay(3,'Bal')">Pi ile Satin Al</button></div>
+<div class="card"><h3>Koy Peyniri</h3><p>2 Pi</p><button onclick="pay(2,'Peynir')">Pi ile Satin Al</button></div>
+<script>
+Pi.init({version:"2.0", sandbox:true});
+async function login(){
+try{const a=await Pi.authenticate(['username','payments']);document.getElementById('user').innerText="Hos geldin: @"+a.user.username;}catch(e){alert("Giris iptal");}
+}
+async function pay(amount,memo){
+try{await Pi.createPayment({amount:amount,memo:memo,metadata:{product:memo}},{onReadyForServerApproval:(id)=>{alert("Onay

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yıldız Otomotiv - Güvenli Araç Alım Satım</title>
+<style>
+body{font-family:Arial;background:#0f0f0f;color:white;margin:0;padding:0;text-align:center}
+header{background:#ffcc00;color:black;padding:25px}
+header h1{margin:0;font-size:32px}
+header p{margin:5px}
+.car{background:#1c1c1c;margin:15px;border-radius:15px;padding:15px;text-align:left}
+.car img{width:100%;border-radius:10px}
+.price{color:#ffcc00;font-size:22px;font-weight:bold}
+.btn{display:block;background:#25D366;color:white;padding:15px;margin:20px;border-radius:10px;text-decoration:none;font-weight:bold;font-size:18px}
+.call{display:block;background:white;color:black;padding:15px;margin:0 20px 20px;border-radius:10px;text-decoration:none;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>⭐ YILDIZ OTOMOTİV</h1>
+<p>Güvenli - Ekspertizli - Takas Olur</p>
+<p>📍 İstanbul</p>
+</header>
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800">
+<h2>2020 BMW 320i M Sport</h2>
+<p>✅ 85.000 KM - Boyasız - Tramersiz<br>✅ Otomatik - Hayalet Ekran</p>
+<div class="price">1.250.000 TL</div>
+</div>
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800">
+<h2>2021 Porsche 911 Carrera</h2>
+<p>✅ 32.000 KM - İlk Sahibinden<br>✅ Bayi Bakımlı - Garantili</p>
+<div class="price">8.950.000 TL</div>
+</div>
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800">
+<h2>2019 Mercedes C200 AMG</h2>
+<p>✅ 95.000 KM - Ekspertizli<br>✅ Takas Olur - Kredi İmkanı</p>
+<div class="price">1.480.000 TL</div>
+</div>
+
+<a class="btn" href="https://wa.me/905555555555">📱 WhatsApp'tan Yaz</a>
+<a class="call" href="tel:+905555555555">📞 Hemen Ara</a>
+<p style="opacity:0.6;font-size:13px">Yıldız Otomotiv - Tüm araçlarımız ekspertizlidir.</p>
+</body>
+</html>
